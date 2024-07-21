@@ -20,7 +20,7 @@ async function startCountdown() {
         return { remainingDays, remainingHours, remainingMinutes, remainingSeconds };
     }
     function updateCountdown() {
-        const { remainingDays, remainingHours, remainingMinutes, remainingSeconds } = calculateTimeRemaining(targetDateTime);
+        const { remainingDays, remainingHours, remainingMinutes, remainingSeconds } = calculateTimeRemaining(targetDate);
         console.log(`${remainingDays} days, ${remainingHours} hours, ${remainingMinutes} minutes, ${remainingSeconds} seconds left`);
     }
     updateCountdown();

@@ -30,7 +30,7 @@ function calculateTimeRemaining (targetDate: Date): {remainingDays: number; rema
 
 }
 function updateCountdown() {
-    const { remainingDays, remainingHours, remainingMinutes, remainingSeconds } = calculateTimeRemaining (targetDateTime);
+    const { remainingDays, remainingHours, remainingMinutes, remainingSeconds } = calculateTimeRemaining (targetDate);
     console.log(`${remainingDays} days, ${remainingHours} hours, ${remainingMinutes} minutes, ${remainingSeconds} seconds left`);
 }
 updateCountdown();
